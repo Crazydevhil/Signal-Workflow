@@ -20,7 +20,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav style={{ padding: '20px 0', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-primary)' }}>
           <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <a href="/" style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>
+            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>
+              <img src="/Signal_Workflows_Logo.jpg" alt="Signal Workflows Logo" style={{ width: '32px', height: '32px', borderRadius: '6px' }} />
               Signal Workflows
             </a>
             <HeaderAuth />
