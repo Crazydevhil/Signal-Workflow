@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import HeaderAuth from "@/components/HeaderAuth";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +23,7 @@ export default function RootLayout({
             <a href="/" style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>
               Signal Workflows
             </a>
-            <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-              <a href="/saved" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-                My Saved
-              </a>
-              <a href="/submit" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600' }}>
-                + Submit
-              </a>
-            </div>
+            <HeaderAuth />
           </div>
         </nav>
         {children}
